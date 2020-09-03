@@ -10,6 +10,9 @@ const redReturn = document.getElementById("red-return");
 const filBefore = document.getElementById("fil-before");
 const filAfter = document.getElementById("fil-after");
 const filReturn = document.getElementById("fil-return");
+const sorBefore = document.getElementById("sor-before");
+const sorAfter = document.getElementById("sor-after");
+const sorReturn = document.getElementById("sor-return");
 
 const arry = ["bob", 10, 5, 3, 1000, "jill", "joe"];
 
@@ -50,3 +53,9 @@ filBefore.innerHTML = arry;
 // Remove all strings from the array
 filReturn.innerHTML = arry.filter((e) => !isNaN(e));
 filAfter.innerHTML = arry;
+
+// array.sort
+sorBefore.innerHTML = arry;
+// sort the array
+sorReturn.innerHTML = arry.sort();
+sorAfter.innerHTML = arry;
